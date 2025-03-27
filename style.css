@@ -1,0 +1,532 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Adicione isso ao seu arquivo style.css */
+.paises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.pais-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.pais-card:hover {
+    transform: translateY(-5px);
+}
+
+.pais-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+}
+
+.pais-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.pais-card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .paises-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .pais-card img {
+        width: 80px;
+    }
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+header .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Navigation */
+#main-nav {
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+#main-nav li {
+    margin: 0 15px;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+#main-nav a i {
+    margin-right: 8px;
+}
+
+#main-nav a:hover {
+    color: #f1c40f;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+h2 i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Intro Section */
+
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px; /* Adicione esta linha para limitar a largura máxima */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+    max-height: 350px; /* Limita a altura máxima */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Climate Section */
+.climate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.climate-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.climate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.climate-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Tabs Section */
+.tabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-light);
+    position: relative;
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+}
+
+.tab-btn.active:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* River Gallery */
+.river-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+.river-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.river-card:hover {
+    transform: translateY(-5px);
+}
+
+.river-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.river-card h3 {
+    padding: 1rem 1rem 0;
+    color: var(--secondary-color);
+}
+
+.river-card p {
+    padding: 0 1rem 1.5rem;
+    color: var(--text-light);
+}
+
+/* Vegetation Section */
+.vegetation-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.vegetation-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vegetation-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Economy Stats */
+.economy-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+    margin: 1rem;
+}
+
+.stat-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(var(--primary-color) 0%, var(--light-color) 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    position: relative;
+}
+
+.stat-circle span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Newsletter */
+#newsletter {
+    background: var(--secondary-color);
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#newsletter h2 {
+    color: white;
+}
+
+#newsletter h2:after {
+    background-color: var(--accent-color);
+}
+
+#newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+#newsletter-form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+#newsletter-form button {
+    border-radius: 0 5px 5px 0;
+    background-color: var(--accent-color);
+}
+
+#newsletter-form button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 3rem 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    #main-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    #main-nav li {
+        margin: 5px 10px;
+    }
+    
+    .economy-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #newsletter-form {
+        flex-direction: column;
+    }
+    
+    #newsletter-form input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #newsletter-form button {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header .subtitle {
+        font-size: 1rem;
+    }
+    
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}

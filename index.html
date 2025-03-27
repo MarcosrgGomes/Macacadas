@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>América do Sul - Diversidade Natural</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>América do Sul</h1>
+            <p class="subtitle">Um continente de contrastes e belezas naturais</p>
+        </div>
+    </header>
+    
+    <nav id="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#clima"><i class="fas fa-sun"></i> Clima</a></li>
+                <li><a href="#relevo"><i class="fas fa-mountain"></i> Relevo</a></li>
+                <li><a href="#hidrografia"><i class="fas fa-water"></i> Hidrografia</a></li>
+                <li><a href="#vegetacao"><i class="fas fa-tree"></i> Vegetação</a></li>
+                <li><a href="#recursos"><i class="fas fa-gem"></i> Recursos</a></li>
+                <li><a href="#economia"><i class="fas fa-chart-line"></i> Economia</a></li>
+                <li><a href="#paises"><i class="fas fa-globe-americas"></i> Países</a></li>
+                <li><a href="#clima"><i class="fas fa-sun"></i> Clima</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <section id="intro">
+            <div class="intro-content">
+                <h2>Diversidade Sul-Americana</h2>
+                <p>A América do Sul é um continente de extraordinária diversidade natural, cultural e econômica. Com paisagens que vão desde os picos andinos até a vastidão amazônica, este continente abriga alguns dos ecossistemas mais importantes do planeta.</p>
+                <button id="explore-btn" class="btn">Explorar Mais <i class="fas fa-arrow-down"></i></button>
+            </div>
+            <div class="intro-image">
+                <img src="https://static.significados.com.br/foto/mapa-politico-america-do-sul.jpg?width=1024" alt="Paisagem da América do Sul">
+            </div>
+        </section>
+
+        <section id="paises">
+            <h2><i class="fas fa-globe-americas"></i> Países da América do Sul</h2>
+            <div class="paises-grid">
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/125px-Flag_of_Argentina.svg.png" alt="Argentina">
+                    <h3>Argentina</h3>
+                    <p>Capital: Buenos Aires</p>
+                </div>
+                <div class="pais-card">
+                    <img src="data:image/png;base64,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" alt="Bolívia">
+                    <h3>Bolívia</h3>
+                    <p>Capital: Sucre (constitucional) e La Paz (administrativa)</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png" alt="Brasil">
+                    <h3>Brasil</h3>
+                    <p>Capital: Brasília</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/125px-Flag_of_Chile.svg.png" alt="Chile">
+                    <h3>Chile</h3>
+                    <p>Capital: Santiago</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/125px-Flag_of_Colombia.svg.png" alt="Colômbia">
+                    <h3>Colômbia</h3>
+                    <p>Capital: Bogotá</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Flag_of_Ecuador.svg/125px-Flag_of_Ecuador.svg.png" alt="Equador">
+                    <h3>Equador</h3>
+                    <p>Capital: Quito</p>
+                </div>
+                <div class="pais-card">
+                    <img src="data:image/png;base64,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" alt="Guiana">
+                    <h3>Guiana</h3>
+                    <p>Capital: Georgetown</p>
+                </div>
+                <div class="pais-card">
+                    <img src="data:image/png;base64,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" alt="Paraguai">
+                    <h3>Paraguai</h3>
+                    <p>Capital: Assunção</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/125px-Flag_of_Peru.svg.png" alt="Peru"
+                    <h3>Peru</h3>
+                    <p>Capital: Lima</p>
+                </div>
+                <div class="pais-card">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAgVBMVEU3fj+0Ci3////syB0reTWYtpv8+fmuAACzAC3vzxywAC7EVyntyx3v0By4HyzIYijmth/QeybirCDfpCG8NCvRgCW7Livnuh/PdybksCDNcye3FyzMbifgqCHKaSfGXSjCUSm+PirViiTy1hvpwB7cnCLalyLrwx27MCvnuR/YkCPbwOKAAAAD80lEQVR4nO2d23baMBBFoe5FmkjcIRCHhNzb/v8H1oBxjAcDaRudWYuzn/0g7zUjjaTBdDqEEEIIIYQQQgghhBBCCCGEEEIIIYQQQpLzlTTpfCNNOl9IEzrR0ImGTjR0oqETDZ1o6ERDJxo60dCJhk40dKKhEw2daOhEQyeaznfSpPODNOl0SRM7Thx6ABVmnLiZGSlmnMhI0EPYYcWJmzxNrASKFScyjVMrgWLGySAM6GQPN/OZtzLLGnEiw8LJ0EigWHEyCJmZ5LHhxPVilmWxZyN5bDiRuS+c+LmNQDHiZBEKJ2FBJxWutw6TIlBsJI8JJ3JTOrkxESg2nIzCxkmwseex4MTl2zApAiW3kDwmnNxWTm7pZIssQ+kkLC0kjwUnLmY7IuNkg7vzlRN/Z0CKAScyDpWTMDaQPAacdN+VFFLQg+lacOL6vubE9/HJg3dSTx0byYN34upKCimXEyeuDbn3e078vbQ+m2isiZzk/asWVuNGnIxXbY/28zSDTeTE3fvoD7OvpJDS8lxMNv2myh3JRzH7F/wiTzX7JptjncxVSJxPiENJNvkmXHfk4dmffvvDQfL8kHCJTrkWO/fyd/kTX5KtOWvS1ifSDx/PnxDu0tZxiWs2mQ0+mj9+MEtc2qauY508fix/4mO6ybUkfW0vq7fz8ydkq/T7H8B+x3WX54ZKXCLa3BB7QCc3Z5Uqwc+T580azL5YJmeUKmmLkhqgswLnXk/lT3xNWpTUgJ2fnChVQujDDpdwZ0rSW7RLCYMe7rwNeM7m5K3VyRtkci1BOpm0TykR2SwLdCLT9rXHI5tlkU6uj8wn1xfpxE2OlSgemDzAdedI6mCTB+hkcLQ+ATbLwpy42fFCNuI6zXF17PD4jgfYaY5z0kid0NgqA5MH5WTbTV5LlXHeOMDGdZqjnGy7yd+D5Fac3O3tCnGd5jAn9Q2gv/65fn+Z/aqJwnWao85PerW3j7/LHZ+T37X8gXWag5zsusnX8ZBdvQeEXGVV/MA6zVFORrtXb9yNSz7a2YJ1mmOcVN3kIU4bJyVOhrH0heo0Bzkpu8kPHkNXd+2oTnPQuf22m7zlbnx3147qNAfFid8UJa1342Wp4i8oTjbd5Efvxrd37aBOc4iTdUvsibvxzV07qFkWkzvhjLtxWWUB02kOuS/uP426pyPAdZdPkE5zhBNZNouSwxSlCmTlgeTO2Xfj8vCZw2gDs+58wpP/EfxvEOzB77Np+B0/Db/3qKETDZ1o6ERDJxo60dCJhk40dKKhEw2daOhEQycaOtHQiYZONHSi4f/Savj/xRr0X0oTQgghhBBCCCGEEEIIIYQQQgghhBBCyCXyByvx737NQIw0AAAAAElFTkSuQmCC" alt="Suriname">
+                    <h3>Suriname</h3>
+                    <p>Capital: Paramaribo</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/125px-Flag_of_Uruguay.svg.png" alt="Uruguai">
+                    <h3>Uruguai</h3>
+                    <p>Capital: Montevidéu</p>
+                </div>
+                <div class="pais-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/125px-Flag_of_Venezuela.svg.png" alt="Venezuela">
+                    <h3>Venezuela</h3>
+                    <p>Capital: Caracas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="clima">
+            <h2><i class="fas fa-sun"></i> Clima</h2>
+            <div class="climate-grid" id="climate-grid"></div>
+        </section>
+        
+        <section id="relevo">
+            <h2><i class="fas fa-mountain"></i> Relevo</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="andes">Andes</button>
+                <button class="tab-btn" data-tab="planalto">Planalto Brasileiro</button>
+                <button class="tab-btn" data-tab="planicie">Planícies</button>
+            </div>
+            <div class="tab-content active" id="andes">
+                <h3>Cordilheira dos Andes</h3>
+                <p>A mais longa cadeia montanhosa do mundo, estendendo-se por 7 países. O Aconcágua, com 6.961m, é o pico mais alto fora da Ásia.</p>
+            </div>
+            <div class="tab-content" id="planalto">
+                <h3>Planalto Brasileiro</h3>
+                <p>Área de altitudes moderadas que ocupa grande parte do Brasil central, com formações como chapadas e serras.</p>
+            </div>
+            <div class="tab-content" id="planicie">
+                <h3>Planícies</h3>
+                <p>Incluem a Planície Amazônica (maior planície aluvial do mundo), o Pantanal e a Planície do Chaco.</p>
+            </div>
+        </section>
+        
+        <section id="hidrografia">
+            <h2><i class="fas fa-water"></i> Hidrografia</h2>
+            <div class="river-gallery">
+                <div class="river-card">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Rio Amazonas">
+                    <h3>Rio Amazonas</h3>
+                    <p>Maior volume de água do mundo, com 6.992 km de extensão.</p>
+                </div>
+                <div class="river-card">
+                    <img src="data:image/jpeg;base64,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" alt="Rio Paraná">
+                    <h3>Rio Paraná</h3>
+                    <p>Principal rio da Bacia do Prata, com 4.880 km de extensão.</p>
+                </div>
+                <div class="river-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxllKE8j1fVzxXrkQ5VGbTrQVyHWW5ZBStA&s" alt="Rio Orinoco">
+                    <h3>Rio Orinoco</h3>
+                    <p>Importante rio da Venezuela e Colômbia, com 2.140 km.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="vegetacao">
+            <h2><i class="fas fa-tree"></i> Vegetação</h2>
+            <div class="vegetation-container" id="vegetation-container"></div>
+        </section>
+        
+        <section id="recursos">
+            <h2><i class="fas fa-gem"></i> Recursos Naturais</h2>
+            <div class="resources-chart" id="resources-chart"></div>
+        </section>
+        
+        <section id="economia">
+            <h2><i class="fas fa-chart-line"></i> Atividades Econômicas</h2>
+            <div class="economy-stats">
+                <div class="stat-item">
+                    <div class="stat-circle" data-percent="35">
+                        <span>0%</span>
+                    </div>
+                    <h3>Agricultura</h3>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle" data-percent="25">
+                        <span>0%</span>
+                    </div>
+                    <h3>Indústria</h3>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle" data-percent="40">
+                        <span>0%</span>
+                    </div>
+                    <h3>Serviços</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section id="newsletter">
+            <h2>Receba Mais Informações</h2>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit" class="btn">Assinar <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre</h3>
+                    <p>Site educativo sobre a diversidade da América do Sul. Desenvolvido para fins didáticos.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Bibliografia</a></li>
+                        <li><a href="#">Mapas</a></li>
+                        <li><a href="#">Estatísticas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@americadosul.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 América do Sul - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
